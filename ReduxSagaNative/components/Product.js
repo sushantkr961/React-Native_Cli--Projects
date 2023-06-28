@@ -26,7 +26,7 @@ const Product = ({item}) => {
     } else {
       setIsAdded(false);
     }
-  }, [allCartItems]);
+  }, [allCartItems, item.name]);
 
   const handleCart = cartItem => {
     // console.warn('cart added', cartItem);
