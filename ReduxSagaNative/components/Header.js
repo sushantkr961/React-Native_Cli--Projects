@@ -7,7 +7,7 @@ const Header = () => {
   const [cartCount, setCartCount] = useState(0);
 
   const cartData = useSelector(state => state.reducer);
-  console.warn(cartData);
+  // console.warn(cartData);
 
   useEffect(() => {
     setCartCount(cartData.length);
